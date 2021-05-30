@@ -1,0 +1,30 @@
+.price-list
+    display: flex
+    justify-content: center
+    min-height: 463px
+    padding: 60px 0px 120px 0px
+    &__main-wrapper
+        display: flex
+        width: 1040px
+        justify-content: space-between
+        margin-top: 60px
+    &__wrapper
+        width: 366px
+    &__text
+        display: flex
+        justify-content: space-between
+    &__desc
+        font-size: 13px
+        font-weight: 500
+        margin-bottom: 15px
+    &__title
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            width: 15px
+            height: 15px
+            background: $main-color
+            border-radius: 100%
+            left: -25px
+            top: 2px

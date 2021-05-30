@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-display: swap;
+    src: local('MuseoSansCyrl-500'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-display: swap;
+    src: local('MuseoSansCyrl-300'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-display: swap;
+    src: local('MuseoSansCyrl-700'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    font-display: swap;
+    src:  url('../fonts/icomoon.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
