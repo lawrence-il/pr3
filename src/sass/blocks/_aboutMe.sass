@@ -19,7 +19,7 @@
         grid-column: 2/3
         grid-row: 1/2
     &__main-title
-        margin-top: 20px
+        margin-top: 10px
     &__title,&__desc-spec
         position: relative
         padding-left: 45px
@@ -44,12 +44,15 @@
         position: relative
         &:before
             @include before_circle
-            top: -3%
+    &__desc-wrapper
+        p
+            margin-bottom: 0px
     &__desc
-        margin-top: 80px
+        margin-top: 20px
         font-weight: 500
         font-size: 14px
         line-height: 21px
+        
     &__desc-spec
         width: 245px
         font-weight: 700
@@ -57,11 +60,13 @@
         line-height: 18px
         padding-left: 45px
         margin-top: 6px
+
     &__second-wrapper
         display: grid
-        grid-template: repeat(2, 100px) / repeat(2, 245px)
+        grid-template: repeat(2, minmax(100px, auto)) / repeat(2, 245px)
         grid-auto-rows: 1fr
         gap: 20px 50px
+        
     
     
         

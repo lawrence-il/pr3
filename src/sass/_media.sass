@@ -1,0 +1,90 @@
+@media (max-width: 1360px)
+    .sidepanel
+        display: none
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .aboutMe
+        &__wrapper
+            grid-template-columns: 400px minmax(540px, auto)
+            column-gap: 36px
+        &__second-wrapper
+            grid-template: repeat(2, 100px) / repeat(2, 245px)
+            column-gap: 40px
+        &__desc
+            padding-right: 15px
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .aboutMe
+        &__wrapper
+            grid-template-columns: 320px minmax(388px, auto)
+        &__second-wrapper
+            grid-template: repeat(3, minmax(85px, auto)) / 370px
+            grid-auto-rows: minmax(85px, auto)
+        &__desc-spec
+            width: 100%
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &_fz48
+            font-size: 36px
+    .promo
+        &__title
+            line-height: 39px
+            width: 345px
+    .aboutMe
+        padding-top: 40px
+        &__wrapper
+            grid-template:  400px repeat(2, minmax(240px, auto)) / 540px
+        &__photo
+            grid-row: 1
+            grid-column: 1
+        &__desc
+            padding-right: 0
+            &-wrapper
+                grid-row: 2
+                grid-column: 1
+        &__second-wrapper
+            grid-row: 3
+            grid-column: 1
+            grid-template: repeat(2, minmax(100px, auto)) / repeat(2, 250px)
+            grid-auto-rows: minmax(100px, auto)
+            margin-left: 12px
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .title
+        &_fz48
+            font-size: 30px
+        &_fz36
+            font-size: 26px
+    .hamburger
+        right: 20px
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+    .promo
+        background: url("../img/main_bg.jpg") 17% center/cover no-repeat
+        &__title
+            padding: 0 5px
+            width: 300px
+        &__btns
+            margin-top: 30px
+    .aboutMe
+        &__subtitle
+            margin: 26px 0
+        &__wrapper
+            grid-template:  340px repeat(2, minmax(220px, auto)) / 1fr
+            row-gap: 20px
+        &__main-title
+            line-height: 26px
+            margin: 0 0 15px 0
+        &__second-wrapper
+            grid-template: repeat(2, minmax(100px, auto)) / 1fr
+            
