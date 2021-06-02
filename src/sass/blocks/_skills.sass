@@ -2,6 +2,17 @@
     margin-top: 120px
     min-height: 875px
     padding: 0 10px
+    &__section-title
+        position: relative
+        text-align: center
+        &:before
+            @include before_circle
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__section-subtitle
+        display: block
+        text-align: center
     &__main-wrapper
         display: grid
         grid-template-columns: repeat(4, minmax(270px, auto))
@@ -24,8 +35,8 @@
         margin: 20px 0 15px 0
     &__second-wrapper
         display: grid
-        grid-template-rows: repeat(2, 70px)
-        grid-template-columns: repeat(3, 350px)
+        grid-template-rows: repeat(2, minmax(70px, auto))
+        grid-template-columns: repeat(3, minmax(350px, auto))
         grid-auto-rows: 70px
         gap: 30px 45px
         margin-top: 120px

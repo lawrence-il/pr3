@@ -4,7 +4,16 @@
         display: grid
         grid-template-columns: repeat(2, 425px)
         gap: 135px
-    &__subtitle
+    &__section-title
+        position: relative
+        text-align: center
+        &:before
+            @include before_circle
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__section-subtitle
+        display: block
         text-align: center
     &__column-title
         position: relative
