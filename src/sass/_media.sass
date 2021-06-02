@@ -14,6 +14,10 @@
             column-gap: 40px
         &__desc
             padding-right: 15px
+    .resume
+        &__wrapper
+            padding: 60px 0 0 0
+        
 @media (max-width: 992px)
     .container
         max-width: 720px
@@ -25,6 +29,12 @@
             grid-auto-rows: minmax(85px, auto)
         &__desc-spec
             width: 100%
+    .resume
+        &__wrapper
+            grid-template: minmax(285px,auto)/ repeat(2, 1fr)
+            gap: 60px
+    
+
 @media (max-width: 768px)
     .container
         max-width: 540px
@@ -77,6 +87,7 @@
         &__btns
             margin-top: 30px
     .aboutMe
+        padding-bottom: 40px
         &__subtitle
             margin: 26px 0
         &__wrapper
@@ -86,5 +97,14 @@
             line-height: 26px
             margin: 0 0 15px 0
         &__second-wrapper
-            grid-template: repeat(2, minmax(100px, auto)) / 1fr
+            grid-template: repeat(2, minmax(65px, auto)) / 1fr
+        &__title
+            &_web:after,
+            &_dev:after,
+            &_design:after
+                @include about_Me_after
+                left: -10px
+    .resume
+        &__wrapper
+            grid-template:  repeat(2, minmax(220px, auto)) / 1fr
             
