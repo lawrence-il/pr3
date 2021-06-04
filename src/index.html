@@ -135,7 +135,13 @@
     <section class="aboutMe">
         <div class="container">
             <div class="aboutMe__wrapper">
-                <img src="img/scale_1200.webp" alt="web" class="aboutMe__photo">
+                
+                <picture >
+                    <source class="aboutMe__photo" media="(max-width: 576px)" srcset="img/cat-min.webp">
+                    <source class="aboutMe__photo" media="(min-width: 577px)" srcset="img/cat.webp">
+                    <img class="aboutMe__photo" src="img/cat.jpg" alt="web">
+                </picture>
+
                 <div class="aboutMe__desc-wrapper">
                     <h2 class="title title_fz16 aboutMe__subtitle">Про меня</h2>
                     <div class="title title_fz36 aboutMe__main-title">Меня зовут Илья</div>
@@ -288,45 +294,51 @@
                     <div class="skills__desc">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
             </div>
+
             <div class="skills__second-wrapper">
+
                 <div class="skills__wrapper-proc">
                     <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
                     <div class="skills__proc">80%</div>
                     <div class="skills__scale-skill"></div>
                     <div class="skills__scale-skill skills__scale-skill-orange"></div>
-                    
                 </div>
+
                 <div class="skills__wrapper-proc">
                     <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
                     <div class="skills__proc">60%</div>
                     <div class="skills__scale-skill"></div>
                     <div class="skills__scale-skill skills__scale-skill-orange"></div>
                 </div>
+
                 <div class="skills__wrapper-proc">
                     <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
                     <div class="skills__proc">50%</div>
                     <div class="skills__scale-skill"></div>
                     <div class="skills__scale-skill skills__scale-skill-orange"></div>
                 </div>
+
+                <div class="skills__wrapper-proc">
+                    <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
+                    <div class="skills__proc">30%</div>
+                    <div class="skills__scale-skill"></div>
+                    <div class="skills__scale-skill skills__scale-skill-orange"></div>   
+                </div>
+
                 <div class="skills__wrapper-proc">
                     <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
                     <div class="skills__proc">30%</div>
                     <div class="skills__scale-skill"></div>
                     <div class="skills__scale-skill skills__scale-skill-orange"></div>
-                    
                 </div>
-                <div class="skills__wrapper-proc">
-                    <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
-                    <div class="skills__proc">30%</div>
-                    <div class="skills__scale-skill"></div>
-                    <div class="skills__scale-skill skills__scale-skill-orange"></div>
-                </div>
+
                 <div class="skills__wrapper-proc">
                     <h4 class="title title_fz14 skills__title-proc">Создание сайтов</h4>
                     <div class="skills__proc">40%</div>
                     <div class="skills__scale-skill"></div>
                     <div class="skills__scale-skill skills__scale-skill-orange"></div>
                 </div>
+
             </div>
     </section>
     <!-- <section class="portf">
