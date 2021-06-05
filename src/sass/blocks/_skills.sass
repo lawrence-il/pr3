@@ -39,14 +39,14 @@
         grid-template-columns: repeat(3, minmax(350px, auto))
         grid-auto-rows: 70px
         gap: 30px 45px
-        margin-top: 120px
+        margin-top: 40px
     //subgrid
     &__wrapper-proc
         display: grid
         position: relative
-        grid-template-rows: repeat(2, 50%)
-        grid-template-columns: repeat(2, 50%)
-        grid-auto-rows: 50%
+        grid-template-rows: repeat(2, minmax(30px, auto))
+        grid-template-columns: 80% 20%
+        grid-auto-rows: minmax(30px, auto)
         padding-top: 8px
     &__proc
         grid-column: 2

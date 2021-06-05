@@ -20,11 +20,21 @@
             gap: 120px
     .skills
         &__main-wrapper
-            grid-template-columns: repeat(3,minmax(270px, auto))
-            grid-template-rows: repeat(3,minmax(270px, auto))
+            grid-template-columns: repeat(auto-fit, 260px)
+            justify-content: center
         &__second-wrapper
-            grid-template-rows: repeat(3,minmax(70px,auto))
-            grid-template-columns: repeat(2,minmax(350px,auto))
+            grid-template-columns: repeat(auto-fit, 245px)
+            grid-auto-rows: minmax(70px, auto)
+            justify-content: center
+    .portf
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 280px)
+            grid-auto-rows: 280px
+            justify-content: center
+        &__item_four
+            grid-row: unset
+            grid-column: unset
+
 @media (max-width: 992px)
     .container
         max-width: 720px
@@ -40,14 +50,11 @@
         &__wrapper
             grid-template: minmax(285px,auto)/ repeat(2, 1fr)
             gap: 60px
-    .skills
+    .price-list
         &__main-wrapper
-            grid-template-columns: repeat(2,minmax(260px,auto))
-            grid-template-rows: repeat(4,minmax(270px,auto))
-            grid-auto-columns: minmax(260px,auto)
-        &__second-wrapper
-            grid-template-columns: repeat(2,minmax(335px,auto))
-    
+            justify-content: space-between
+        &__wrapper
+            width: 320px       
 
 @media (max-width: 768px)
     .container
@@ -76,11 +83,15 @@
             grid-template: repeat(2, minmax(100px, auto)) / repeat(2, 250px)
             grid-auto-rows: minmax(100px, auto)
             margin-left: 12px
-    .skills
-        margin-top: 40px
-        &__second-wrapper
-            margin-top: 40px
-            grid-template-columns: repeat(1,minmax(335px,auto))
+    .portf
+        &__wrapper
+            grid-template:  260px / repeat(auto-fit, 260px)
+            grid-auto-rows: 260px
+    .price-list
+        &__main-wrapper
+            justify-content: center
+        
+    
 
 @media (max-width: 576px)
     .container
@@ -126,14 +137,13 @@
         &__wrapper
             grid-template:  repeat(2, minmax(220px, auto)) / 1fr
     .skills
-        &__main-wrapper
-            grid-template-columns: repeat(1, minmax(260px,auto))
-            grid-template-rows: repeat(8, minmax(270px,auto))
-        &__second-wrapper
-            grid-template-columns: repeat(1,minmax(280px,auto))
         &__section-subtitle
             margin-top: 20px
             line-height: 39px
-            
-        
-            
+    .portf
+        margin-top: 40px
+
+@media (max-width: 375px)
+    .price-list
+        &__wrapper
+            width: 245px 

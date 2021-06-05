@@ -3,10 +3,21 @@
     justify-content: center
     min-height: 463px
     padding: 60px 0px 120px 0px
+    &__section-title
+        position: relative
+        text-align: center
+        &:before
+            @include before_circle
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__section-subtitle
+        display: block
+        text-align: center
     &__main-wrapper
         display: flex
-        width: 1040px
-        justify-content: space-between
+        justify-content: space-evenly
+        flex-wrap: wrap
         margin-top: 60px
     &__wrapper
         width: 366px
