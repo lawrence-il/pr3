@@ -16,4 +16,30 @@ const counters = document.querySelectorAll('.skills__proc')
 
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
-})
+});
+
+function validateForms(form){
+    $(form).validate({
+      rules: {
+        text: 'required',
+        name: {
+            required: true,
+            minlength: "2"
+        },
+        email:{
+            required: true,
+            email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        text: "Пожалуйста, введите текст",
+        email: {
+          required: "Пожалуйста, введите эл.почту",
+          email: "Пример почты  name@domain.com"
+        }
+      }
+    });
+
+}(jQuery);
+validateForms('.contacts__form');

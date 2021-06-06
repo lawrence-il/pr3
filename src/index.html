@@ -145,7 +145,7 @@
                 <div class="aboutMe__desc-wrapper">
                     <h2 class="title title_fz16 aboutMe__subtitle">Про меня</h2>
                     <div class="title title_fz36 aboutMe__main-title">Меня зовут Илья</div>
-                    <div class="divider divider_aboutMe"></div>
+                    <div class="divider divider_columned"></div>
                     <p class="aboutMe__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
@@ -440,14 +440,20 @@
                 </div>
         </div>
     </section>
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
-                <img src="img/scale_1200.webp" alt="web" class="aboutMe__photo">
+
+                <picture >
+                    <source class="aboutMe__photo" media="(max-width: 576px)" srcset="img/cat-min.webp">
+                    <source class="aboutMe__photo" media="(min-width: 577px)" srcset="img/cat.webp">
+                    <img class="aboutMe__photo" src="img/cat.jpg" alt="web">
+                </picture>
+
                 <div class="contacts__descr">
-                    <h2 class="title title_fz16 __subtitle">Контакты</h2>
-                    <h2 class="title title_fz36 __main-title">Свяжитесь со мной</р>
-                    <div class="divider divider_contacts"></div>
+                    <h2 class="title title_fz16 contacts__subtitle">Контакты</h2>
+                    <h2 class="title title_fz36 contacts__main-title">Свяжитесь со мной</р>
+                    <div class="divider divider_contact"></div>
                     <h3 class="title title_fz14 contacts__text">Любым удобным для вас способом</h3>
                     <div class="contacts__social">
                         <a href="#" class="contacts__social">
@@ -464,11 +470,11 @@
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
                             <label for="name">Ваше имя</label>
-                            <input required name="text" id="name" type="text">
+                            <input name="name" id="name" type="text">
                         </div>
                         <div class="contacts__input">
-                            <label for="name">Ваша почта</label>
-                            <input required name="email" id="name" type="email">
+                            <label for="email">Ваша почта</label>
+                            <input name="email" id="email" type="email">
                         </div>
                         <div class="contacts__textarea">
                             <label for="text">Ваше сообщение</label>
@@ -485,7 +491,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
