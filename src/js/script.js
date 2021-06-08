@@ -1,6 +1,6 @@
-const hamburger = document.querySelector(".hamburger")
-const menu = document.querySelector(".menu")
-const closeX = document.querySelector(".menu__close")
+const hamburger = document.querySelector(".hamburger"),
+        menu = document.querySelector(".menu"),
+        closeX = document.querySelector(".menu__close");
 
 hamburger.addEventListener("click", () => {
     menu.classList.add('active');
@@ -11,8 +11,8 @@ closeX.addEventListener("click", () => {
 
 });
 
-const counters = document.querySelectorAll('.skills__proc')
-    lines = document.querySelectorAll(".skills__scale-skill-orange")
+const counters = document.querySelectorAll('.skills__proc');
+    lines = document.querySelectorAll(".skills__scale-skill-orange");
 
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
@@ -36,10 +36,10 @@ function validateForms(form){
         text: "Пожалуйста, введите текст",
         email: {
           required: "Пожалуйста, введите эл.почту",
-          email: "Пример почты  name@domain.com"
+          email: "Пример name@domain.com"
         }
       }
     });
 
-}(jQuery);
+}
 validateForms('.contacts__form');
