@@ -11,8 +11,8 @@ closeX.addEventListener("click", () => {
 
 });
 
-const counters = document.querySelectorAll('.skills__proc');
-    lines = document.querySelectorAll(".skills__scale-skill-orange");
+const counters = document.querySelectorAll('.skills__proc'),
+      lines = document.querySelectorAll(".skills__scale-skill-orange");
 
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
